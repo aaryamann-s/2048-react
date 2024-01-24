@@ -1,4 +1,4 @@
-import { Board, Tile } from "../types";
+import { Board, Tile } from "../types/index";
 
 function pickRandomElement<T>(arr: T[]): T {
   const randomElement = arr[Math.floor(Math.random() * arr.length)];

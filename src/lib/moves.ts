@@ -3,7 +3,13 @@ import {
   leftRotateUpdates,
   rightRotateState,
 } from "./rotations";
-import { Board, MoveInfo, OneDimUpdate, Row, TwoDimUpdate } from "../types";
+import {
+  Board,
+  MoveInfo,
+  OneDimUpdate,
+  Row,
+  TwoDimUpdate,
+} from "../types/index";
 import { initialGameState } from "./util";
 
 export function compressRow(

@@ -1,4 +1,4 @@
-import { Board, TwoDimUpdate } from "../types";
+import { Board, TwoDimUpdate } from "../types/index";
 import { initialGameState } from "./util";
 
 export function rightRotateState(state: Board): Board {

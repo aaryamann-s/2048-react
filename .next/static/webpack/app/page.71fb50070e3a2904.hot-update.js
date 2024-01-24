@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+self["webpackHotUpdate_N_E"]("app/page",{
+
+/***/ "(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=D%3A%5Cwork%5C2048-react%5Cnode_modules%5Cnext%5Cdist%5Cshared%5Clib%5Clazy-dynamic%5Cdynamic-bailout-to-csr.js&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Ccomponents%5CGameBoard.tsx&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Cstyles%5CApp.css&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Cstyles%5Ctile-colors.css&server=false!":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=D%3A%5Cwork%5C2048-react%5Cnode_modules%5Cnext%5Cdist%5Cshared%5Clib%5Clazy-dynamic%5Cdynamic-bailout-to-csr.js&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Ccomponents%5CGameBoard.tsx&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Cstyles%5CApp.css&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Cstyles%5Ctile-colors.css&server=false! ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
+
+eval(__webpack_require__.ts("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-bailout-to-csr.js */ \"(app-pages-browser)/./node_modules/next/dist/shared/lib/lazy-dynamic/dynamic-bailout-to-csr.js\"));\nPromise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/components/GameBoard.tsx */ \"(app-pages-browser)/./src/components/GameBoard.tsx\"));\nPromise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/styles/App.css */ \"(app-pages-browser)/./src/styles/App.css\"));\nPromise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/styles/tile-colors.css */ \"(app-pages-browser)/./src/styles/tile-colors.css\"))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvYnVpbGQvd2VicGFjay9sb2FkZXJzL25leHQtZmxpZ2h0LWNsaWVudC1lbnRyeS1sb2FkZXIuanM/bW9kdWxlcz1EJTNBJTVDd29yayU1QzIwNDgtcmVhY3QlNUNub2RlX21vZHVsZXMlNUNuZXh0JTVDZGlzdCU1Q3NoYXJlZCU1Q2xpYiU1Q2xhenktZHluYW1pYyU1Q2R5bmFtaWMtYmFpbG91dC10by1jc3IuanMmbW9kdWxlcz1EJTNBJTVDd29yayU1QzIwNDgtcmVhY3QlNUNzcmMlNUNjb21wb25lbnRzJTVDR2FtZUJvYXJkLnRzeCZtb2R1bGVzPUQlM0ElNUN3b3JrJTVDMjA0OC1yZWFjdCU1Q3NyYyU1Q3N0eWxlcyU1Q0FwcC5jc3MmbW9kdWxlcz1EJTNBJTVDd29yayU1QzIwNDgtcmVhY3QlNUNzcmMlNUNzdHlsZXMlNUN0aWxlLWNvbG9ycy5jc3Mmc2VydmVyPWZhbHNlISIsIm1hcHBpbmdzIjoiQUFBQSw4UUFBeUk7QUFDekksc0xBQXlGO0FBQ3pGLGtLQUErRTtBQUMvRSIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvPzI3ZmYiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCJEOlxcXFx3b3JrXFxcXDIwNDgtcmVhY3RcXFxcbm9kZV9tb2R1bGVzXFxcXG5leHRcXFxcZGlzdFxcXFxzaGFyZWRcXFxcbGliXFxcXGxhenktZHluYW1pY1xcXFxkeW5hbWljLWJhaWxvdXQtdG8tY3NyLmpzXCIpO1xuaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCJEOlxcXFx3b3JrXFxcXDIwNDgtcmVhY3RcXFxcc3JjXFxcXGNvbXBvbmVudHNcXFxcR2FtZUJvYXJkLnRzeFwiKTtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiRDpcXFxcd29ya1xcXFwyMDQ4LXJlYWN0XFxcXHNyY1xcXFxzdHlsZXNcXFxcQXBwLmNzc1wiKTtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiRDpcXFxcd29ya1xcXFwyMDQ4LXJlYWN0XFxcXHNyY1xcXFxzdHlsZXNcXFxcdGlsZS1jb2xvcnMuY3NzXCIpIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=D%3A%5Cwork%5C2048-react%5Cnode_modules%5Cnext%5Cdist%5Cshared%5Clib%5Clazy-dynamic%5Cdynamic-bailout-to-csr.js&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Ccomponents%5CGameBoard.tsx&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Cstyles%5CApp.css&modules=D%3A%5Cwork%5C2048-react%5Csrc%5Cstyles%5Ctile-colors.css&server=false!\n"));
+
+/***/ }),
+
+/***/ "(app-pages-browser)/./src/styles/tile-colors.css":
+/*!************************************!*\
+  !*** ./src/styles/tile-colors.css ***!
+  \************************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval(__webpack_require__.ts("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"4b4f93496eea\");\nif (true) { module.hot.accept() }\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKGFwcC1wYWdlcy1icm93c2VyKS8uL3NyYy9zdHlsZXMvdGlsZS1jb2xvcnMuY3NzIiwibWFwcGluZ3MiOiI7QUFBQSwrREFBZSxjQUFjO0FBQzdCLElBQUksSUFBVSxJQUFJLGlCQUFpQiIsInNvdXJjZXMiOlsid2VicGFjazovL19OX0UvLi9zcmMvc3R5bGVzL3RpbGUtY29sb3JzLmNzcz80YWIxIl0sInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFwiNGI0ZjkzNDk2ZWVhXCJcbmlmIChtb2R1bGUuaG90KSB7IG1vZHVsZS5ob3QuYWNjZXB0KCkgfVxuIl0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(app-pages-browser)/./src/styles/tile-colors.css\n"));
+
+/***/ })
+
+});

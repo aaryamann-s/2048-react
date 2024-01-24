@@ -1,10 +1,14 @@
+"use client";
+
 import { useEffect } from "react";
 import Row from "./GameRow";
-import useGame from "../hooks/useGame.js";
+import useGame from "../hooks/useGame";
 
 export default function GameBoard() {
   const { board, score, gameOver, dispatch } = useGame();
-
+  useEffect(() => {
+    console.log("BOARD UPDATE!", board);
+  }, [board]);
   const handleKeyDown = (e: KeyboardEvent) => {
     const key = e.key;
     switch (key) {
