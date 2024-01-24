@@ -1,0 +1,52 @@
+.game-tile[data-value="2"],
+.game-tile[data-value="4"] {
+  color: #776e65;
+}
+
+.game-tile[data-value=""] {
+  background-color: #edc22e;
+}
+
+.game-tile[data-value="2"] {
+  background-color: #eee4da;
+}
+
+.game-tile[data-value="4"] {
+  background-color: #eee1c9;
+}
+
+.game-tile[data-value="8"] {
+  background-color: #f3b27a;
+}
+
+.game-tile[data-value="16"] {
+  background-color: #f69664;
+}
+
+.game-tile[data-value="32"] {
+  background-color: #f77c5f;
+}
+
+.game-tile[data-value="64"] {
+  background-color: #f75f3b;
+}
+
+.game-tile[data-value="128"] {
+  background-color: #edd073;
+}
+
+.game-tile[data-value="256"] {
+  background-color: #edcc62;
+}
+
+.game-tile[data-value="512"] {
+  background-color: #edc950;
+}
+
+.game-tile[data-value="1024"] {
+  background-color: #edc53f;
+}
+
+.game-tile[data-value="2048"] {
+  background-color: #edc22e;
+}
