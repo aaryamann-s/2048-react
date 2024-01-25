@@ -10,22 +10,21 @@ import { ChevronDown, Delete, Overflow, Upload } from "baseui/icon";
 import { AppNavBar, setItemActive, NavItem } from "baseui/app-nav-bar";
 import useStore from "../store/store";
 
-
 const MENU_ITEMS = [
   {
     icon: Upload,
     label: "Game",
-    info: { hideWhenLoggedIn: false,link: "/game" },
+    info: { visibility: "logged-in", link: "/game" },
   },
   {
     icon: Upload,
     label: "Leaderboard",
-    info: { hideWhenLoggedIn: false,link: "/leaderboard" },
+    info: { visibility: "public", link: "/leaderboard" },
   },
   {
     icon: Upload,
     label: "Login",
-    info: { hideWhenLoggedIn: true, link: "/login" },
+    info: { visibility: "logged-out", link: "/login" },
   },
 ];
 
@@ -37,13 +36,14 @@ export default function Header() {
   const isLoggedIn = username !== null;
   const [css] = useStyletron();
 
-
-  const [mainItems, setMainItems] = React.useState<NavItem[]>(MENU_ITEMS.map(item => {
-    return {
-      ...item,
-      active: pathname === item.info.link
-    }
-  }));
+  const [mainItems, setMainItems] = React.useState<NavItem[]>(
+    MENU_ITEMS.map((item) => {
+      return {
+        ...item,
+        active: pathname === item.info.link,
+      };
+    })
+  );
   const userItems = [
     { icon: Overflow, label: "Logout", info: { action: () => removeUser() } },
   ];
@@ -68,16 +68,28 @@ export default function Header() {
           title={
             <Link
               onClick={() => {
-                console.log(MENU_ITEMS)
-                setMainItems(MENU_ITEMS)}
-              }
+                console.log(MENU_ITEMS);
+                setMainItems(MENU_ITEMS);
+              }}
               style={{ textDecoration: "none", color: "white" }}
               href="/"
             >
               2048er
             </Link>
           }
-          mainItems={isLoggedIn ? mainItems.filter(item => item.info?.hideWhenLoggedIn === false) : mainItems}
+          mainItems={
+            isLoggedIn
+              ? mainItems.filter(
+                  (item) =>
+                    item.info.visibility === "logged-in" ||
+                    item.info.visibility === "public"
+                )
+              : mainItems.filter(
+                  (item) =>
+                    item.info.visibility === "logged-out" ||
+                    item.info.visibility === "public"
+                )
+          }
           onMainItemSelect={handleMainItemSelect}
           userItems={isLoggedIn ? userItems : []}
           onUserItemSelect={(item: NavItem) => {
