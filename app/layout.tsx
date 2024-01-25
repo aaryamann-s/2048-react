@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { Client as Styletron } from "styletron-engine-monolithic";
 import { Provider as StyletronProvider } from "styletron-react";

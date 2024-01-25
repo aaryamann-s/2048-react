@@ -44,6 +44,7 @@ export default function Header() {
       };
     })
   );
+  console.log('hey', pathname, mainItems);
   const userItems = [
     { icon: Overflow, label: "Logout", info: { action: () => removeUser() } },
   ];

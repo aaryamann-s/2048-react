@@ -47,7 +47,7 @@ export default function GameBoard() {
 
   return (
     <>
-      <h3>Score: {score}</h3>
+      <h3 style={{color: 'white'}}>Score: {score}</h3>
       <div id="game-container">
         {board.map((gameRow, index) => (
           <Row key={index} row={gameRow} rowIndex={index} />
