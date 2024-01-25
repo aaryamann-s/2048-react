@@ -11,17 +11,32 @@ import useStore from "../store/store";
 
 export default function Header() {
   const router = useRouter();
-  const pathname = usePathname()
-  const username = useStore(state => state.username);
+  const pathname = usePathname();
+  const username = useStore((state) => state.username);
+  const removeUser = useStore((state) => state.removeUser);
   const [css] = useStyletron();
 
   const [mainItems, setMainItems] = React.useState<NavItem[]>([
-    { icon: Upload, label: "Game", info: {link: "/"}, active: pathname == '/' },
-    { icon: Upload, label: "User", info: {link: "/user"}, active: pathname == '/user' },
+    {
+      icon: Upload,
+      label: "Game",
+      info: { link: "/" },
+      active: pathname == "/",
+    },
+    {
+      icon: Upload,
+      label: "User",
+      info: { link: "/user" },
+      active: pathname == "/user",
+    },
   ]);
   const userItems = [
-    { icon: Overflow, label: "Profile" },
-    { icon: Overflow, label: "Logout" },
+    {
+      icon: Overflow,
+      label: "Profile",
+      info: { action: () => router.push("/profile") },
+    },
+    { icon: Overflow, label: "Logout", info: { action: () => removeUser() } },
   ];
 
   function handleMainItemSelect(item: NavItem) {
@@ -45,7 +60,9 @@ export default function Header() {
           mainItems={mainItems}
           onMainItemSelect={handleMainItemSelect}
           userItems={username ? userItems : []}
-          onUserItemSelect={(item) => console.log("user", item)}
+          onUserItemSelect={(item: NavItem) => {
+            item.info?.action();
+          }}
           username={username ?? ""}
           usernameSubtitle="5.0"
           userImgUrl=""
