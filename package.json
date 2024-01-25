@@ -15,7 +15,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "styletron-engine-monolithic": "^1.0.0",
-    "styletron-react": "^6.1.1"
+    "styletron-react": "^6.1.1",
+    "zustand": "^4.5.0"
   },
   "devDependencies": {
     "@types/node": "20.11.6",

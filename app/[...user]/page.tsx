@@ -1,4 +1,3 @@
-import Header from "../../src/components/Header";
 
 export default function User() {
   return (
@@ -10,7 +9,7 @@ export default function User() {
         gap: 8,
       }}
     >
-      <Header />
+      user
     </div>
   );
 }
