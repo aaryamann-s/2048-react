@@ -6,10 +6,12 @@ import { FormControl } from "baseui/form-control";
 import { ProgressBar } from "baseui/progress-bar";
 import { Button } from "baseui/button";
 import { useState } from "react";
+import useStore from "../../src/store/store";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const setUser = useStore(state => state.setUser);
   const [res, setRes] = useState({data: null, loading: false, error: null});
   const {data, loading, error} = res;
   return (
@@ -46,6 +48,7 @@ export default function Login() {
                   loading: true
                 });
                 setTimeout(()=>{
+                  setUser(username);
                   setRes({
                     ...res,
                     loading: false

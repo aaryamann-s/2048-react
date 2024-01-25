@@ -7,11 +7,12 @@ import { useStyletron } from "baseui";
 import { Layer } from "baseui/layer";
 import { ChevronDown, Delete, Overflow, Upload } from "baseui/icon";
 import { AppNavBar, setItemActive, NavItem } from "baseui/app-nav-bar";
+import useStore from "../store/store";
 
 export default function Header() {
   const router = useRouter();
   const pathname = usePathname()
-  console.log('route', pathname);
+  const username = useStore(state => state.username);
   const [css] = useStyletron();
 
   const [mainItems, setMainItems] = React.useState<NavItem[]>([
@@ -42,10 +43,10 @@ export default function Header() {
         <AppNavBar
           title="2048er"
           mainItems={mainItems}
-          userItems={userItems}
           onMainItemSelect={handleMainItemSelect}
+          userItems={username ? userItems : []}
           onUserItemSelect={(item) => console.log("user", item)}
-          username="Umka Marshmallow"
+          username={username ?? ""}
           usernameSubtitle="5.0"
           userImgUrl=""
         />
