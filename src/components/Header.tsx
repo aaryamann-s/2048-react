@@ -26,6 +26,11 @@ const MENU_ITEMS = [
     label: "Login",
     info: { visibility: "logged-out", link: "/login" },
   },
+  {
+    icon: Upload,
+    label: "Register",
+    info: { visibility: "logged-out", link: "/register" },
+  },
 ];
 
 export default function Header() {
@@ -44,7 +49,6 @@ export default function Header() {
       };
     })
   );
-  console.log('hey', pathname, mainItems);
   const userItems = [
     { icon: Overflow, label: "Logout", info: { action: () => removeUser() } },
   ];
@@ -69,7 +73,6 @@ export default function Header() {
           title={
             <Link
               onClick={() => {
-                console.log("menu", MENU_ITEMS);
                 setMainItems(MENU_ITEMS.map((item) => {
                   return {
                     ...item,

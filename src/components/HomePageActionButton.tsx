@@ -6,7 +6,6 @@ import { Button } from "baseui/button";
 import useStore from "../store/store";
 
 export default function HomePageActionButton() {
-    console.log("CLIENT!");
   const username = useStore((state) => state.username);
   const isLoggedIn = username !== null;
   return (

@@ -1,7 +1,6 @@
 import HomePageActionButton from "../src/components/HomePageActionButton";
 
 export default async function Page() {
-  console.log("SERVER!");
   return (
     <div
       style={{

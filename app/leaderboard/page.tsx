@@ -3,7 +3,6 @@ import { getClient } from "../../src/lib/client";
 
 import { gql } from "@apollo/client";
 
-export const revalidate = 5;
 const query = gql`
 query HighScores {
   highScores {
