@@ -1,7 +1,6 @@
-// "use client";
 import HomePageActionButton from "../src/components/HomePageActionButton";
 
-export default function Page() {
+export default async function Page() {
   console.log("SERVER!");
   return (
     <div

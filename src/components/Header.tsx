@@ -69,8 +69,13 @@ export default function Header() {
           title={
             <Link
               onClick={() => {
-                console.log(MENU_ITEMS);
-                setMainItems(MENU_ITEMS);
+                console.log("menu", MENU_ITEMS);
+                setMainItems(MENU_ITEMS.map((item) => {
+                  return {
+                    ...item,
+                    active: false
+                  };
+                }));
               }}
               style={{ textDecoration: "none", color: "white" }}
               href="/"
