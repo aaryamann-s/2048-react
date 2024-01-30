@@ -4,10 +4,12 @@ import { getClient } from "../../src/lib/client";
 import { gql } from "@apollo/client";
 
 const query = gql`
-query HighScores {
-  highScores {
-    username
-    score
+query getScores{
+  getScores {
+    user {
+      username
+    }
+    points
   }
 }
 `;
@@ -15,7 +17,7 @@ query HighScores {
 export default async function Page() {
   const client = getClient();
   const { data, loading, error } = await client.query({ query });
-  return data.highScores.map((highScore: any) => {
-    return <h1 style={{color: 'white'}}>{highScore.username}</h1>
+  return data.getScores.map((score: any, index: number) => {
+    return <h1 style={{color: 'white'}}>{index+1}. {score.user.username} ({score.points})</h1>
   })
 }

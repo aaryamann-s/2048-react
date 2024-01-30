@@ -4,10 +4,11 @@ import { useEffect } from "react";
 import Row from "./GameRow";
 import useGame from "../hooks/useGame";
 
-export default function GameBoard() {
+export default function GameBoard(props: {onFinish: (score: number) => void}) {
   const { board, score, gameOver, dispatch } = useGame();
   useEffect(() => {
-  }, [board]);
+    if(gameOver) props.onFinish(score);
+  }, [gameOver]);
   const handleKeyDown = (e: KeyboardEvent) => {
     const key = e.key;
     switch (key) {
